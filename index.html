@@ -22,7 +22,7 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#portfolio">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn-contact">Contact</a>
       </nav>
     </header>
 
@@ -115,73 +115,146 @@
 
     <!-- portfolio/projects -->
     <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Projects</span></h2>
+  <h2 class="heading">Latest <span>Projects</span></h2>
 
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="images/portfolio2.jpg" alt="E-commerce" />
-          <div class="portfolio-layer">
-            <h4>E-commerce Platform</h4>
-            <p>Full-stack project with Django backend & React frontend, featuring product catalog, shopping cart & checkout.</p>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/portfolio3.jpg" alt="SAWAI" />
-          <div class="portfolio-layer">
-            <h4>SAWAI</h4>
-            <p>Smart Agriculture with AI: IoT-based soil monitoring and real-time Python data analysis.</p>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/portfolio4.jpg" alt="Airbnb Clone" />
-          <div class="portfolio-layer">
-            <h4>Airbnb Clone</h4>
-            <p>Django + MySQL project with authentication, bookings, payments, and admin dashboard.</p>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/portfolio5.jpg" alt="Credit Scoring Model" />
-          <div class="portfolio-layer">
-            <h4>Credit Scoring Model</h4>
-            <p>Machine learning model predicting client solvency using Python & Scikit-learn.</p>
-          </div>
-        </div>
+  <div class="portfolio-container">
+    <div class="portfolio-box">
+      <img src="images/portfolio2.jpg" alt="E-commerce" />
+      <div class="portfolio-layer">
+        <h4>E-commerce Platform</h4>
+        <p>Full-stack project with Django backend & React frontend, featuring product catalog, shopping cart & checkout.</p>
+        <a href="https://github.com/kay1403/ecommerce-backend-nexus" target="_blank">
+          🔗 View Project
+        </a>
       </div>
-    </section>
+    </div>
+
+    <div class="portfolio-box">
+      <img src="images/portfolio3.jpg" alt="SAWAI" />
+      <div class="portfolio-layer">
+        <h4>SAWAI</h4>
+        <p>Smart Agriculture with AI: IoT-based soil monitoring and real-time Python data analysis.</p>
+        <a href="https://github.com/kay1403/SAWAI" target="_blank">
+          🔗 View Project
+        </a>
+      </div>
+    </div>
+
+    <div class="portfolio-box">
+      <img src="images/portfolio4.jpg" alt="Airbnb Clone" />
+      <div class="portfolio-layer">
+        <h4>Airbnb Clone</h4>
+        <p>Django + MySQL project with authentication, bookings, payments, and admin dashboard.</p>
+        <a href="https://github.com/kay1403/ecommerce-backend-nexus" target="_blank">
+          🔗 View Project
+        </a>
+      </div>
+    </div>
+
+    <div class="portfolio-box">
+      <img src="images/portfolio5.jpg" alt="Credit Scoring Model" />
+      <div class="portfolio-layer">
+        <h4>Credit Scoring Model</h4>
+        <p>Machine learning model predicting client solvency using Python & Scikit-learn.</p>
+        <a href="https://github.com/kay1403/Credit_Scoring_Model" target="_blank">
+          🔗 View Project
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- contact -->
     <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
-        </div>
-        <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Subject" />
-        </div>
-        <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
-    </section>
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <form id="contact-form">
+    <div class="input-box">
+      <input type="text" name="user_name" placeholder="Full Name" required />
+      <input type="email" name="user_email" placeholder="Email Address" required />
+    </div>
+    <div class="input-box">
+      <input type="number" name="user_phone" placeholder="Mobile Number" required />
+      <input type="text" name="subject" placeholder="Subject" required />
+    </div>
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn" />
+  </form>
+</section>
+
 
     <!-- footer -->
     <footer class="footer">
-      <div class="footer-text">
-        <p>© 2025 Ange Koumba | All Rights Reserved</p>
-      </div>
-      <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i>go back up</a>
-      </div>
-    </footer>
+  <div class="footer-wrapper">
 
+    <!-- Contact -->
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>Ange Koumba</p>
+      <p>Kigali, Rwanda</p>
+      <p>Email: <a href="mailto:angekoumba754@gmail.com">angekoumba754@gmail.com</a></p>
+      <p>Tel: <a href="tel:+250737680403">+250 737 680 403</a></p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-column">
+      <h3>Services</h3>
+      <ul>
+        <li>Web Development</li>
+        <li>Data Analytics</li>
+        <li>AI & Machine Learning</li>
+      </ul>
+    </div>
+
+    <!-- Follow Me -->
+    <div class="footer-column">
+      <h3>Follow Me</h3>
+      <div class="footer-social">
+        <a href="https://web.facebook.com/ange.koumba.56?locale=fr_FR" target="_blank">
+          <img src="https://img.icons8.com/?size=100&id=118467&format=png&color=000000" alt="Facebook" />
+        </a>
+        <a href="https://wa.me/250737680403" target="_blank">
+          <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=000000" alt="WhatsApp" />
+        </a>
+        <a href="https://www.linkedin.com/in/angekoumba1403/" target="_blank">
+          <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/kay1403" target="_blank">
+          <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" alt="GitHub" />
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Ange Koumba | All Rights Reserved</p>
+    <a href="#home" class="back-to-top"><i class="bx bx-up-arrow-alt"></i> Top</a>
+  </div>
+</footer>
     <!-- scripts -->
     <script src="js/scrollreveal.js"></script>
     <script src="js/typed.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+     (function(){
+      emailjs.init("xPli5Qr1N_RE53QJ9");
+     })();
+    </script>
     <script src="js/script.js"></script>
+
   </body>
 </html>

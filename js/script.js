@@ -60,3 +60,22 @@ const typed = new Typed('.multiple-text', {
     loop:true
 
 });
+
+//contact Me
+emailjs.init("xPli5Qr1N_RE53QJ9"); 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        emailjs.sendForm('service_ou9f6zm', 'template_7w1lmkb', this)
+            .then(function() {
+                alert('Message sent successfully!');
+                form.reset(); 
+            }, function(error) {
+                alert('Error while sending: ' + JSON.stringify(error));
+            });
+    });
+});
